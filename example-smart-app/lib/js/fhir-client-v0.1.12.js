@@ -17423,7 +17423,7 @@ BBClient.authorize = function(params, errback){
     if (typeof client.launch !== 'undefined' && client.launch) {
        redirect_to += "&launch="+encodeURIComponent(client.launch);
     }
-
+    console.log('THIS', redirect_to)
     window.location.href = redirect_to;
   }, errback);
 };
